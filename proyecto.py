@@ -22,6 +22,7 @@ alfabeto= [' ',':','_','-','[',']','(',')', ',','"','0','1','2','3','4','5','6',
 'A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z',
 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z']
 
+#Transiciones
 q26_t = {" ": "q26", ":": "q27"}
 q25_t = {" ": "q25", ")": "q26"}
 q24_t = {" ": "q25", ")": "q26", '0': "q24",'1': "q24",'2': "q24",'3': "q24",'4': "q24",'5': "q24",'6': "q24",'7': "q24",'8': "q24",'9': "q24"}
@@ -67,7 +68,6 @@ grafo = { "q0": q0_t,"q1": q1_t,"q2": q2_t,"q3": q3_t, "q4": q4_t, "q5": q5_t, "
 def automata(values):
 	estadoInicial = "q0"
 	estadoActual = estadoInicial
-	
 	recorrido = []
 	recorrido.append(estadoActual)
 
@@ -80,7 +80,6 @@ def automata(values):
 			txt.insert(tk.END,"\nResultado: Cadena no valida."+"\nCarater incorrecto: "+v+"\nEstado final: " +estadoActual)
 			break
 
-	
 	if estadoActual == "q27":
 		txt.insert(tk.END, recorrido)
 		txt.insert(tk.END, "\nResultado: Cadena aceptada")

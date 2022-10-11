@@ -7,6 +7,7 @@ esto incluira las opciones de for en un rango, en una lista ya definida como var
 * Se aceptarán estructuras FOR que utilicen listas como variables, rangos, funciones que retornan una lista(sin pasarle parametros), o bien listas nuevas definidas en el propio ciclo (Ejemplo [1,2,3])
 * No se verificara que los nombres de variables sean iguales a variables reservadas (for i in import:)
 * El rango se aceptara unicamente con un maximo de 2 parametros
+* No se aceptaran lineas que contengan un comentario
 * Para strings se usaran " "
 
 ## Ejemplos
